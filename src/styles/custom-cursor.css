@@ -1,0 +1,12 @@
+/* Custom cursor styles */
+* {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%23ffffff" d="M8 0l2 13.2L8 16l-2-2.8L8 0z"/></svg>') 8 8, auto !important;
+}
+
+button, a, [role="button"] {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%2364ffda" d="M12 0l3 18.6L12 24l-3-5.4L12 0z"/></svg>') 12 12, pointer !important;
+}
+
+.code-block {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="%23ffffff" d="M10 2l8 8-8 8-8-8 8-8z"/></svg>') 10 10, text !important;
+}

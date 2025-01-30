@@ -1,0 +1,100 @@
+/* Minecraft Font */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.woff2') format('woff2');
+}
+
+.font-minecraft {
+  font-family: 'Minecraft', system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Theme Transitions */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Minecraft-style Button */
+.minecraft-button {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(45deg, #1a1a1a 0%, #333333 100%);
+  border: 3px solid #000000;
+  box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+  color: white;
+  font-family: 'Minecraft', system-ui;
+  text-shadow: 2px 2px #000a;
+  transition: all 0.2s ease;
+}
+
+.minecraft-button:hover {
+  background: linear-gradient(45deg, #333333 0%, #4a4a4a 100%);
+  transform: translateY(-2px);
+  box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7, 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.minecraft-button:active {
+  transform: translateY(1px);
+  box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+}
+
+/* Alternative Button Style */
+.minecraft-button-alt {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: 'Minecraft', system-ui;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+}
+
+.minecraft-button-alt:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Text Shadow */
+.text-shadow-lg {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-xl {
+  text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
